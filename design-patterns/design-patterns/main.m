@@ -7,12 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Factory/CurrencyFactory/CurrencyFactory.h"
+#import "Director.h"
+#import "CarBuilder.h"
+#import "CarManualBuilder.h"
+#import "Car.h"
+#import "Manual.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSLog(@"%@", [[CurrencyFactory currencyFor:(usa)]getCode]);
-        NSLog(@"%@", [[CurrencyFactory currencyFor:(usa)]getSymbol]);
+        Director *dir = [[Director alloc]init];
+        CarBuilder *cb = [[CarBuilder alloc]init];
+        [dir constructSportsCar:cb];
+        Car *car = [cb getResult];
+        NSLog(@"%d", car.gps);
+        NSLog(@"%d", car.seats);
+        NSLog(@"%d", car.tripComputer);
+        
+        CarManualBuilder *cmb = [[CarManualBuilder alloc]init];
+        [dir constructSportsCar:cmb];
+        Manual *manual = [cmb getResult];
+        NSLog(@"%@", [manual description]);
     }
     return 0;
 }

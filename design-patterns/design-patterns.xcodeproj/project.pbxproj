@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D843E2621A43F18003B8489 /* CarManualBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D843E2521A43F18003B8489 /* CarManualBuilder.m */; };
+		0D843E2921A4861B003B8489 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D843E2821A4861B003B8489 /* Director.m */; };
 		0DA5EF4821A1728D00ED830F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5EF4721A1728D00ED830F /* main.m */; };
 		0DF2DB5221A3FD0C00F779AA /* Euro.h in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5121A3FD0C00F779AA /* Euro.h */; };
 		0DF2DB5421A3FEA300F779AA /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5321A3FEA300F779AA /* Euro.m */; };
 		0DF2DB5721A3FF8000F779AA /* USD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5621A3FF8000F779AA /* USD.m */; };
 		0DF2DB5C21A409DB00F779AA /* CurrencyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5B21A409DB00F779AA /* CurrencyFactory.m */; };
+		0DF2DB6121A418A900F779AA /* Builder.h in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB6021A418A900F779AA /* Builder.h */; };
+		0DF2DB6321A4195F00F779AA /* CarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB6221A4195F00F779AA /* CarBuilder.m */; };
+		0DF2DB6721A41B7A00F779AA /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB6621A41B7A00F779AA /* Car.m */; };
+		0DF2DB6B21A42EDD00F779AA /* Manual.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB6A21A42EDD00F779AA /* Manual.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +33,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D843E2421A43EC6003B8489 /* CarManualBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarManualBuilder.h; sourceTree = "<group>"; };
+		0D843E2521A43F18003B8489 /* CarManualBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarManualBuilder.m; sourceTree = "<group>"; };
+		0D843E2721A485C7003B8489 /* Director.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		0D843E2821A4861B003B8489 /* Director.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
 		0DA5EF4421A1728D00ED830F /* design-patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "design-patterns"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA5EF4721A1728D00ED830F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0DF2DB5021A3FCD400F779AA /* Currency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
@@ -36,6 +46,13 @@
 		0DF2DB5621A3FF8000F779AA /* USD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USD.m; sourceTree = "<group>"; };
 		0DF2DB5A21A4024C00F779AA /* CurrencyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrencyFactory.h; sourceTree = "<group>"; };
 		0DF2DB5B21A409DB00F779AA /* CurrencyFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyFactory.m; sourceTree = "<group>"; };
+		0DF2DB6021A418A900F779AA /* Builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Builder.h; sourceTree = "<group>"; };
+		0DF2DB6221A4195F00F779AA /* CarBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarBuilder.m; sourceTree = "<group>"; };
+		0DF2DB6521A41A6900F779AA /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		0DF2DB6621A41B7A00F779AA /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		0DF2DB6A21A42EDD00F779AA /* Manual.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manual.m; sourceTree = "<group>"; };
+		0DF2DB7721A434CA00F779AA /* CarBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarBuilder.h; sourceTree = "<group>"; };
+		0DF2DB7821A434FB00F779AA /* Manual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manual.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +66,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D843E2A21A49220003B8489 /* Director */ = {
+			isa = PBXGroup;
+			children = (
+				0D843E2721A485C7003B8489 /* Director.h */,
+				0D843E2821A4861B003B8489 /* Director.m */,
+			);
+			path = Director;
+			sourceTree = "<group>";
+		};
+		0D843E2B21A4922A003B8489 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				0DF2DB6021A418A900F779AA /* Builder.h */,
+				0D843E2C21A49237003B8489 /* CarBuilder */,
+				0D843E2D21A49241003B8489 /* CarManualBuilder */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		0D843E2C21A49237003B8489 /* CarBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				0DF2DB7721A434CA00F779AA /* CarBuilder.h */,
+				0DF2DB6221A4195F00F779AA /* CarBuilder.m */,
+			);
+			path = CarBuilder;
+			sourceTree = "<group>";
+		};
+		0D843E2D21A49241003B8489 /* CarManualBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				0D843E2421A43EC6003B8489 /* CarManualBuilder.h */,
+				0D843E2521A43F18003B8489 /* CarManualBuilder.m */,
+			);
+			path = CarManualBuilder;
+			sourceTree = "<group>";
+		};
+		0D843E2E21A49252003B8489 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				0DF2DB6521A41A6900F779AA /* Car.h */,
+				0DF2DB6621A41B7A00F779AA /* Car.m */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		0D843E2F21A4925A003B8489 /* Manual */ = {
+			isa = PBXGroup;
+			children = (
+				0DF2DB7821A434FB00F779AA /* Manual.h */,
+				0DF2DB6A21A42EDD00F779AA /* Manual.m */,
+			);
+			path = Manual;
+			sourceTree = "<group>";
+		};
 		0DA5EF3B21A1728D00ED830F = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				0DA5EF4721A1728D00ED830F /* main.m */,
+				0DF2DB5F21A4187A00F779AA /* Builder */,
 				0DF2DB4F21A3F30700F779AA /* Factory */,
 			);
 			path = "design-patterns";
@@ -118,6 +191,17 @@
 				0DF2DB5921A3FFD200F779AA /* USD */,
 			);
 			path = Currency;
+			sourceTree = "<group>";
+		};
+		0DF2DB5F21A4187A00F779AA /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0D843E2B21A4922A003B8489 /* Builders */,
+				0D843E2A21A49220003B8489 /* Director */,
+				0D843E2E21A49252003B8489 /* Car */,
+				0D843E2F21A4925A003B8489 /* Manual */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +261,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DF2DB5421A3FEA300F779AA /* Euro.m in Sources */,
+				0DF2DB6321A4195F00F779AA /* CarBuilder.m in Sources */,
+				0D843E2621A43F18003B8489 /* CarManualBuilder.m in Sources */,
 				0DF2DB5721A3FF8000F779AA /* USD.m in Sources */,
 				0DA5EF4821A1728D00ED830F /* main.m in Sources */,
 				0DF2DB5C21A409DB00F779AA /* CurrencyFactory.m in Sources */,
 				0DF2DB5221A3FD0C00F779AA /* Euro.h in Sources */,
+				0DF2DB6B21A42EDD00F779AA /* Manual.m in Sources */,
+				0DF2DB6721A41B7A00F779AA /* Car.m in Sources */,
+				0D843E2921A4861B003B8489 /* Director.m in Sources */,
+				0DF2DB6121A418A900F779AA /* Builder.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +393,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JS7SZYV8ND;
+				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -312,6 +403,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JS7SZYV8ND;
+				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
