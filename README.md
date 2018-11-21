@@ -13,6 +13,7 @@ I'm new to Objective-C, and hope this repo will help you and me to become an awe
 Creational:
 - [Factory method](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Factory)
 - [Builder](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Builder)
+- [Singleton](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Singleton)
 
 Structural:
 

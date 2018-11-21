@@ -10,6 +10,7 @@
 		0D843E2621A43F18003B8489 /* CarManualBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D843E2521A43F18003B8489 /* CarManualBuilder.m */; };
 		0D843E2921A4861B003B8489 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D843E2821A4861B003B8489 /* Director.m */; };
 		0DA5EF4821A1728D00ED830F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5EF4721A1728D00ED830F /* main.m */; };
+		0DE43F0421A5E015008936E9 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE43F0321A5E015008936E9 /* Database.m */; };
 		0DF2DB5221A3FD0C00F779AA /* Euro.h in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5121A3FD0C00F779AA /* Euro.h */; };
 		0DF2DB5421A3FEA300F779AA /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5321A3FEA300F779AA /* Euro.m */; };
 		0DF2DB5721A3FF8000F779AA /* USD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5621A3FF8000F779AA /* USD.m */; };
@@ -39,6 +40,8 @@
 		0D843E2821A4861B003B8489 /* Director.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
 		0DA5EF4421A1728D00ED830F /* design-patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "design-patterns"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA5EF4721A1728D00ED830F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DE43F0221A5DE30008936E9 /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		0DE43F0321A5E015008936E9 /* Database.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
 		0DF2DB5021A3FCD400F779AA /* Currency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
 		0DF2DB5121A3FD0C00F779AA /* Euro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Euro.h; sourceTree = "<group>"; };
 		0DF2DB5321A3FEA300F779AA /* Euro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Euro.m; sourceTree = "<group>"; };
@@ -143,8 +146,18 @@
 				0DA5EF4721A1728D00ED830F /* main.m */,
 				0DF2DB5F21A4187A00F779AA /* Builder */,
 				0DF2DB4F21A3F30700F779AA /* Factory */,
+				0DE43F0121A5DD88008936E9 /* Singleton */,
 			);
 			path = "design-patterns";
+			sourceTree = "<group>";
+		};
+		0DE43F0121A5DD88008936E9 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				0DE43F0221A5DE30008936E9 /* Database.h */,
+				0DE43F0321A5E015008936E9 /* Database.m */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 		0DF2DB4F21A3F30700F779AA /* Factory */ = {
@@ -270,6 +283,7 @@
 				0DF2DB6B21A42EDD00F779AA /* Manual.m in Sources */,
 				0DF2DB6721A41B7A00F779AA /* Car.m in Sources */,
 				0D843E2921A4861B003B8489 /* Director.m in Sources */,
+				0DE43F0421A5E015008936E9 /* Database.m in Sources */,
 				0DF2DB6121A418A900F779AA /* Builder.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
