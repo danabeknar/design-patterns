@@ -11,11 +11,13 @@ I'm new to Objective-C, and hope this repo will help you and me to become an awe
 ## Patterns
 
 Creational:
-- [Factory method](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Factory)
-- [Builder](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Builder)
-- [Singleton](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Singleton)
+- [Factory method](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Creational/Factory)
+- [Builder](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Creational/Builder)
+- [Singleton](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Creational/Singleton)
 
 Structural:
+- [Adapter](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Structural/Adapter)
+- [Bridge](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Structural/Bridge)
 
 Behavioral:
 

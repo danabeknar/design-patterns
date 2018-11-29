@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0D0EF5C721B043FE00EEAC41 /* SquarePegAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5C621B043FE00EEAC41 /* SquarePegAdapter.m */; };
+		0D0EF5D021B0543B00EEAC41 /* TV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5CF21B0543B00EEAC41 /* TV.m */; };
+		0D0EF5D421B05DC700EEAC41 /* Remote.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D321B05DC700EEAC41 /* Remote.m */; };
+		0D0EF5D721B061F900EEAC41 /* Radio.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D621B061F900EEAC41 /* Radio.m */; };
+		0D0EF5DA21B0632300EEAC41 /* AdvancedRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D921B0632300EEAC41 /* AdvancedRemote.m */; };
 		0D75735821B005F1006C002F /* RoundHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735721B005F1006C002F /* RoundHole.m */; };
 		0D75735B21B008E9006C002F /* RoundPeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735A21B008E9006C002F /* RoundPeg.m */; };
 		0D75735E21B00A87006C002F /* SquarePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735D21B00A87006C002F /* SquarePeg.m */; };
@@ -40,6 +44,15 @@
 /* Begin PBXFileReference section */
 		0D0EF5C521B042A000EEAC41 /* SquarePegAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquarePegAdapter.h; sourceTree = "<group>"; };
 		0D0EF5C621B043FE00EEAC41 /* SquarePegAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquarePegAdapter.m; sourceTree = "<group>"; };
+		0D0EF5CE21B0538300EEAC41 /* Remote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Remote.h; sourceTree = "<group>"; };
+		0D0EF5CF21B0543B00EEAC41 /* TV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TV.m; sourceTree = "<group>"; };
+		0D0EF5D121B055ED00EEAC41 /* Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		0D0EF5D221B0581600EEAC41 /* TV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TV.h; sourceTree = "<group>"; };
+		0D0EF5D321B05DC700EEAC41 /* Remote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remote.m; sourceTree = "<group>"; };
+		0D0EF5D521B061A600EEAC41 /* Radio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Radio.h; sourceTree = "<group>"; };
+		0D0EF5D621B061F900EEAC41 /* Radio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Radio.m; sourceTree = "<group>"; };
+		0D0EF5D821B062E200EEAC41 /* AdvancedRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedRemote.h; sourceTree = "<group>"; };
+		0D0EF5D921B0632300EEAC41 /* AdvancedRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedRemote.m; sourceTree = "<group>"; };
 		0D75735621B004DB006C002F /* RoundHole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundHole.h; sourceTree = "<group>"; };
 		0D75735721B005F1006C002F /* RoundHole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundHole.m; sourceTree = "<group>"; };
 		0D75735921B0069B006C002F /* RoundPeg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundPeg.h; sourceTree = "<group>"; };
@@ -117,6 +130,62 @@
 			path = "SquarePeg Adapter";
 			sourceTree = "<group>";
 		};
+		0D0EF5CC21B0512B00EEAC41 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				0D0EF5DB21B063F400EEAC41 /* Remote */,
+				0D0EF5DF21B0641F00EEAC41 /* AdvancedRemote */,
+				0D0EF5DC21B063FD00EEAC41 /* Devices */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		0D0EF5DB21B063F400EEAC41 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0D0EF5CE21B0538300EEAC41 /* Remote.h */,
+				0D0EF5D321B05DC700EEAC41 /* Remote.m */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0D0EF5DC21B063FD00EEAC41 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				0D0EF5D121B055ED00EEAC41 /* Device.h */,
+				0D0EF5DE21B0640C00EEAC41 /* Radio */,
+				0D0EF5DD21B0640500EEAC41 /* TV */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		0D0EF5DD21B0640500EEAC41 /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				0D0EF5D221B0581600EEAC41 /* TV.h */,
+				0D0EF5CF21B0543B00EEAC41 /* TV.m */,
+			);
+			path = TV;
+			sourceTree = "<group>";
+		};
+		0D0EF5DE21B0640C00EEAC41 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				0D0EF5D521B061A600EEAC41 /* Radio.h */,
+				0D0EF5D621B061F900EEAC41 /* Radio.m */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		0D0EF5DF21B0641F00EEAC41 /* AdvancedRemote */ = {
+			isa = PBXGroup;
+			children = (
+				0D0EF5D821B062E200EEAC41 /* AdvancedRemote.h */,
+				0D0EF5D921B0632300EEAC41 /* AdvancedRemote.m */,
+			);
+			path = AdvancedRemote;
+			sourceTree = "<group>";
+		};
 		0D75735321B00499006C002F /* Creational */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				0D75735521B004D1006C002F /* Adapter */,
+				0D0EF5CC21B0512B00EEAC41 /* Bridge */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -140,8 +210,8 @@
 			children = (
 				0D0EF5C821B049AA00EEAC41 /* RoundHole */,
 				0D0EF5C921B049B200EEAC41 /* RoundPeg */,
-				0D0EF5CB21B049CE00EEAC41 /* SquarePeg Adapter */,
 				0D0EF5CA21B049BB00EEAC41 /* SquarePeg */,
+				0D0EF5CB21B049CE00EEAC41 /* SquarePeg Adapter */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -350,9 +420,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DF2DB5421A3FEA300F779AA /* Euro.m in Sources */,
+				0D0EF5DA21B0632300EEAC41 /* AdvancedRemote.m in Sources */,
 				0D75735821B005F1006C002F /* RoundHole.m in Sources */,
 				0DF2DB6321A4195F00F779AA /* CarBuilder.m in Sources */,
 				0D75735B21B008E9006C002F /* RoundPeg.m in Sources */,
+				0D0EF5D021B0543B00EEAC41 /* TV.m in Sources */,
 				0D843E2621A43F18003B8489 /* CarManualBuilder.m in Sources */,
 				0DF2DB5721A3FF8000F779AA /* USD.m in Sources */,
 				0DA5EF4821A1728D00ED830F /* main.m in Sources */,
@@ -360,11 +432,13 @@
 				0DF2DB5221A3FD0C00F779AA /* Euro.h in Sources */,
 				0DF2DB6B21A42EDD00F779AA /* Manual.m in Sources */,
 				0DF2DB6721A41B7A00F779AA /* Car.m in Sources */,
+				0D0EF5D721B061F900EEAC41 /* Radio.m in Sources */,
 				0D0EF5C721B043FE00EEAC41 /* SquarePegAdapter.m in Sources */,
 				0D843E2921A4861B003B8489 /* Director.m in Sources */,
 				0DE43F0421A5E015008936E9 /* Database.m in Sources */,
 				0DF2DB6121A418A900F779AA /* Builder.h in Sources */,
 				0D75735E21B00A87006C002F /* SquarePeg.m in Sources */,
+				0D0EF5D421B05DC700EEAC41 /* Remote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
