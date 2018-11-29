@@ -7,11 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Database.h"
+#import "RoundHole.h"
+#import "RoundPeg.h"
+#import "SquarePeg.h"
+#import "SquarePegAdapter.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Database *db = [Database sharedInstance];
+        RoundHole *hole = [[RoundHole alloc]initWithRadius:5];
+        RoundPeg *roundPeg = [[RoundPeg alloc]initWithRadius:5];
+        NSLog(@"%d", [hole fits:roundPeg]); // true
+        
+//        SquarePeg *squarePeg = [[SquarePeg alloc]initWithWidth:2];
+//        NSLog(@"%d", [hole fits:squarePeg]); // runtime error, incompatible types
+        
+        SquarePeg *smallSquarePeg = [[SquarePeg alloc]initWithWidth:2];
+        SquarePeg *largeSquarePeg = [[SquarePeg alloc]initWithWidth:100];
+        
+        SquarePegAdapter *smallSquarePeg_adapter = [[SquarePegAdapter alloc]initWithPeg:smallSquarePeg];
+        SquarePegAdapter *largeSquarePeg_adapter = [[SquarePegAdapter alloc]initWithPeg:largeSquarePeg];
+        
+        NSLog(@"%d", [hole fits:smallSquarePeg_adapter]); // true
+        NSLog(@"%d", [hole fits:largeSquarePeg_adapter]); // false
     }
     return 0;
 }
