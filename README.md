@@ -20,6 +20,7 @@ Structural:
 - [Bridge](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Structural/Bridge)
 
 Behavioral:
+- [Mediator](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Behavioral/Mediator)
 
 To Do:
 -------

@@ -12,6 +12,11 @@
 		0D0EF5D421B05DC700EEAC41 /* Remote.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D321B05DC700EEAC41 /* Remote.m */; };
 		0D0EF5D721B061F900EEAC41 /* Radio.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D621B061F900EEAC41 /* Radio.m */; };
 		0D0EF5DA21B0632300EEAC41 /* AdvancedRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D921B0632300EEAC41 /* AdvancedRemote.m */; };
+		0D1ACA6821DF70F600B6019C /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA6721DF70F600B6019C /* Module.m */; };
+		0D1ACA6F21DF77A100B6019C /* AuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA6E21DF77A100B6019C /* AuthenticationDialog.m */; };
+		0D1ACA7221DF780800B6019C /* Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA7121DF780800B6019C /* Checkbox.m */; };
+		0D1ACA7521DF7AAC00B6019C /* Textbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA7421DF7AAC00B6019C /* Textbox.m */; };
+		0D1ACA7721DF7C8500B6019C /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA7621DF7C8500B6019C /* Button.m */; };
 		0D75735821B005F1006C002F /* RoundHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735721B005F1006C002F /* RoundHole.m */; };
 		0D75735B21B008E9006C002F /* RoundPeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735A21B008E9006C002F /* RoundPeg.m */; };
 		0D75735E21B00A87006C002F /* SquarePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735D21B00A87006C002F /* SquarePeg.m */; };
@@ -53,6 +58,17 @@
 		0D0EF5D621B061F900EEAC41 /* Radio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Radio.m; sourceTree = "<group>"; };
 		0D0EF5D821B062E200EEAC41 /* AdvancedRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedRemote.h; sourceTree = "<group>"; };
 		0D0EF5D921B0632300EEAC41 /* AdvancedRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedRemote.m; sourceTree = "<group>"; };
+		0D1ACA6421DF6D6A00B6019C /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		0D1ACA6521DF6E2600B6019C /* AuthenticationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationDialog.h; sourceTree = "<group>"; };
+		0D1ACA6721DF70F600B6019C /* Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		0D1ACA6C21DF760400B6019C /* Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		0D1ACA6D21DF771C00B6019C /* Button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		0D1ACA6E21DF77A100B6019C /* AuthenticationDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationDialog.m; sourceTree = "<group>"; };
+		0D1ACA7021DF77C900B6019C /* Checkbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Checkbox.h; sourceTree = "<group>"; };
+		0D1ACA7121DF780800B6019C /* Checkbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Checkbox.m; sourceTree = "<group>"; };
+		0D1ACA7321DF7A8300B6019C /* Textbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Textbox.h; sourceTree = "<group>"; };
+		0D1ACA7421DF7AAC00B6019C /* Textbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Textbox.m; sourceTree = "<group>"; };
+		0D1ACA7621DF7C8500B6019C /* Button.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
 		0D75735621B004DB006C002F /* RoundHole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundHole.h; sourceTree = "<group>"; };
 		0D75735721B005F1006C002F /* RoundHole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundHole.m; sourceTree = "<group>"; };
 		0D75735921B0069B006C002F /* RoundPeg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundPeg.h; sourceTree = "<group>"; };
@@ -186,6 +202,88 @@
 			path = AdvancedRemote;
 			sourceTree = "<group>";
 		};
+		0D1ACA6221DF698F00B6019C /* Behavioral */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA6321DF69C000B6019C /* Mediator */,
+			);
+			path = Behavioral;
+			sourceTree = "<group>";
+		};
+		0D1ACA6321DF69C000B6019C /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA7821DF8C0F00B6019C /* Mediators */,
+				0D1ACA7A21DF8C2900B6019C /* Components */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		0D1ACA7821DF8C0F00B6019C /* Mediators */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA6421DF6D6A00B6019C /* Mediator.h */,
+				0D1ACA7921DF8C1C00B6019C /* AuthenticationDialog */,
+			);
+			path = Mediators;
+			sourceTree = "<group>";
+		};
+		0D1ACA7921DF8C1C00B6019C /* AuthenticationDialog */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA6521DF6E2600B6019C /* AuthenticationDialog.h */,
+				0D1ACA6E21DF77A100B6019C /* AuthenticationDialog.m */,
+			);
+			path = AuthenticationDialog;
+			sourceTree = "<group>";
+		};
+		0D1ACA7A21DF8C2900B6019C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA7B21DF8C3800B6019C /* Base */,
+				0D1ACA7C21DF8C4A00B6019C /* Button */,
+				0D1ACA7D21DF8C5800B6019C /* Checkbox */,
+				0D1ACA7E21DF8C5F00B6019C /* Textbox */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0D1ACA7B21DF8C3800B6019C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA6C21DF760400B6019C /* Module.h */,
+				0D1ACA6721DF70F600B6019C /* Module.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0D1ACA7C21DF8C4A00B6019C /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA6D21DF771C00B6019C /* Button.h */,
+				0D1ACA7621DF7C8500B6019C /* Button.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		0D1ACA7D21DF8C5800B6019C /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA7021DF77C900B6019C /* Checkbox.h */,
+				0D1ACA7121DF780800B6019C /* Checkbox.m */,
+			);
+			path = Checkbox;
+			sourceTree = "<group>";
+		};
+		0D1ACA7E21DF8C5F00B6019C /* Textbox */ = {
+			isa = PBXGroup;
+			children = (
+				0D1ACA7321DF7A8300B6019C /* Textbox.h */,
+				0D1ACA7421DF7AAC00B6019C /* Textbox.m */,
+			);
+			path = Textbox;
+			sourceTree = "<group>";
+		};
 		0D75735321B00499006C002F /* Creational */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +391,7 @@
 				0DA5EF4721A1728D00ED830F /* main.m */,
 				0D75735321B00499006C002F /* Creational */,
 				0D75735421B004AF006C002F /* Structural */,
+				0D1ACA6221DF698F00B6019C /* Behavioral */,
 			);
 			path = "design-patterns";
 			sourceTree = "<group>";
@@ -426,17 +525,22 @@
 				0D75735B21B008E9006C002F /* RoundPeg.m in Sources */,
 				0D0EF5D021B0543B00EEAC41 /* TV.m in Sources */,
 				0D843E2621A43F18003B8489 /* CarManualBuilder.m in Sources */,
+				0D1ACA7721DF7C8500B6019C /* Button.m in Sources */,
 				0DF2DB5721A3FF8000F779AA /* USD.m in Sources */,
 				0DA5EF4821A1728D00ED830F /* main.m in Sources */,
 				0DF2DB5C21A409DB00F779AA /* CurrencyFactory.m in Sources */,
 				0DF2DB5221A3FD0C00F779AA /* Euro.h in Sources */,
+				0D1ACA6F21DF77A100B6019C /* AuthenticationDialog.m in Sources */,
 				0DF2DB6B21A42EDD00F779AA /* Manual.m in Sources */,
+				0D1ACA7221DF780800B6019C /* Checkbox.m in Sources */,
 				0DF2DB6721A41B7A00F779AA /* Car.m in Sources */,
 				0D0EF5D721B061F900EEAC41 /* Radio.m in Sources */,
 				0D0EF5C721B043FE00EEAC41 /* SquarePegAdapter.m in Sources */,
 				0D843E2921A4861B003B8489 /* Director.m in Sources */,
+				0D1ACA7521DF7AAC00B6019C /* Textbox.m in Sources */,
 				0DE43F0421A5E015008936E9 /* Database.m in Sources */,
 				0DF2DB6121A418A900F779AA /* Builder.h in Sources */,
+				0D1ACA6821DF70F600B6019C /* Module.m in Sources */,
 				0D75735E21B00A87006C002F /* SquarePeg.m in Sources */,
 				0D0EF5D421B05DC700EEAC41 /* Remote.m in Sources */,
 			);
