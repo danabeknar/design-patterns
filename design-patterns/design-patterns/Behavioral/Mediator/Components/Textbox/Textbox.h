@@ -8,7 +8,7 @@
 
 #import "Module.h"
 
+/// Textbox class
 @interface Textbox: Module
-
 
 @end

@@ -8,10 +8,12 @@
 
 #import "Module.h"
 
+/// Checkbox class
 @interface Checkbox: Module
 
-@property bool isChecked;
+@property (assign, nonatomic) BOOL isChecked;
 
+/// Method that checks
 - (void)check;
 
 @end

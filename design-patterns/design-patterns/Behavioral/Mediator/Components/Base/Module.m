@@ -16,6 +16,7 @@
     if (self = [super init]) {
         self->dialog = dialog;
     }
+    
     return self;
 }
 

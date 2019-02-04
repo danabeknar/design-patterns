@@ -8,27 +8,32 @@
 
 #import "CarBuilder.h"
 
+@interface CarBuilder ()
+
+@property (strong, nonatomic) Car *car;
+
+@end
+
 @implementation CarBuilder
 
 - (void)reset {
-    car = [[Car alloc]init];
+    _car = [[Car alloc]init];
 }
 
 - (void)setGPS:(bool)hasGPS {
-    [car setGps:hasGPS];
+    self.car.hasGPS = hasGPS;
 }
 
-
 - (void)setSeats:(int)number {
-    [car setSeats:number];
+    self.car.numberOfSeats = number;
 }
 
 - (void)setTripComputer:(bool)hasTripComputer {
-    [car setTripComputer:hasTripComputer];
+    self.car.hasTripComputer = hasTripComputer;
 }
 
 - (Car *)getResult {
-    return car;
+    return self.car;
 }
 
 @end

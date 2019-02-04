@@ -9,11 +9,26 @@
 #import <Foundation/Foundation.h>
 #import "Currency.h"
 
-typedef enum {
-    usa,
-    germany
-} COUNTRY;
+/**
+ Enum containing currencies
 
+ - DPCurrencyUSA: USA Currency
+ - DPCurrencyGermany: Germany Currency
+ */
+typedef NS_ENUM(NSInteger, DPCountry) {
+    DPCountryUSA,
+    DPCountryGermany
+};
+
+/// Currency Factory
 @interface CurrencyFactory: NSObject
-+ (id <Currency>) currencyFor:(COUNTRY)country;
+
+/**
+ Factory method that returns currency for given country
+
+ @param country Country
+ @return Currency for given country
+ */
++ (id<Currency>)currencyFor:(DPCountry)country;
+
 @end

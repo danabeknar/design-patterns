@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Database: NSObject
-+ (Database *) sharedInstance;
+/// Database singleton class
+@interface Database : NSObject
+
++ (Database *)sharedInstance;
+
 @end

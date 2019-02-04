@@ -9,6 +9,10 @@
 #import "Remote.h"
 
 // You can extend the remote class withoud modifying the device code
+/// Advanced Remote class
 @interface AdvancedRemote: Remote
-- (void) mute;
+
+/// Method that mutes the remote
+- (void)mute;
+
 @end

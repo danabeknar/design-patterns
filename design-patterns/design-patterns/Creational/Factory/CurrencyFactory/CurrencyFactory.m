@@ -7,19 +7,19 @@
 //
 
 #import "CurrencyFactory.h"
+
 #import "Euro.h"
 #import "USD.h"
 
-
 @implementation CurrencyFactory
 
-+ (id <Currency>) currencyFor:(COUNTRY)country {
++ (id<Currency>) currencyFor:(DPCountry)country {
     switch (country) {
-        case germany:
-        return [[Euro alloc]init];
+        case DPCountryGermany:
+        return [[Euro alloc] init];
             break;
-        case usa:
-            return [[USD alloc]init];
+        case DPCountryUSA:
+            return [[USD alloc] init];
         default:
             break;
     }

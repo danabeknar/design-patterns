@@ -8,11 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Car: NSObject {
-    int seats;
-    bool gps;
-    bool tripComputer;
-}
-@property bool gps, tripComputer;
-@property int seats;
+/// Car class
+@interface Car: NSObject
+
+/// Propery that indicates whether car has gps or not
+@property (assign, nonatomic) BOOL hasGPS;
+
+/// Propery that indicates whether car has trip computer or not
+@property (assign, nonatomic) BOOL hasTripComputer;
+
+/// Number of seats in car
+@property (assign, nonatomic) NSInteger numberOfSeats;
+
 @end

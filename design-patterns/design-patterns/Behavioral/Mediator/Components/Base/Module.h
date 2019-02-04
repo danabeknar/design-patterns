@@ -11,10 +11,22 @@
 
 // Component classes communicate with mediators through their common interface. Thanks to this, the same components can be used in different mediators
 
-@interface Module: NSObject {
+/// Component class
+@interface Module : NSObject {
     id<Mediator> dialog;
 }
+/**
+ Initalization with dialog
+
+ @param dialog Object that implements Mediator protocol
+ @return Module object
+ */
 - (instancetype)initWithDialog:(id<Mediator>)dialog;
+
+
+/// Method that handles clicks
 - (void)click;
+
+/// Method that handles key presses
 - (void)keyPress;
 @end

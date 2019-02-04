@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "Builder.h"
 #import "Car.h"
 
-@interface CarBuilder: NSObject<Builder> {
-    Car* car;
-}
-- (Car *) getResult;
+/// All concrete builders implement common interface in their own way
+@interface CarBuilder : NSObject<Builder>
+
+/**
+ Method that returns ready car
+
+ @return Car object
+ */
+- (Car *)getResult;
+
 @end

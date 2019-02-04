@@ -10,9 +10,7 @@
 #import "Remote.h"
 
 // But each device has its own implementation
-@interface TV: NSObject<Device> {
-    bool isEnabled;
-    int volume;
-    int channel;
-}
+/// TV class
+@interface TV : NSObject<Device>
+
 @end

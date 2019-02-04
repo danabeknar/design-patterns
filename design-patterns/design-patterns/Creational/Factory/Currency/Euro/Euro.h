@@ -8,6 +8,7 @@
 
 #import "Currency.h"
 
-@interface Euro: NSObject <Currency>
+/// Euro currency
+@interface Euro : NSObject <Currency>
 
 @end

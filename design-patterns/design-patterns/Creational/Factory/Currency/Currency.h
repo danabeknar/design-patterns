@@ -8,7 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+/// Interface declaring currency
 @protocol Currency
-- (NSString *) getSymbol;
-- (NSString *) getCode;
+
+/**
+ Method that returns currency symbol
+
+ @return Currency symbol
+ */
+- (NSString *)getSymbol;
+
+
+/**
+ Method that returs currency code
+
+ @return Currency code
+ */
+- (NSString *)getCode;
+
 @end

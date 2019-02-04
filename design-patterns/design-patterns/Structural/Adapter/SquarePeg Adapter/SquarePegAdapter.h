@@ -10,9 +10,24 @@
 #import "RoundPeg.h"
 #import "SquarePeg.h"
 
-@interface SquarePegAdapter: RoundPeg {
-    SquarePeg *peg;
-}
-- (id) initWithPeg:(SquarePeg*)peg;
-- (double) getRadius;
+/// Adapter that extends Round Pef
+@interface SquarePegAdapter : RoundPeg
+
+/**
+ Initalization with square peg
+
+ @param peg SquarePeg object
+ @return SquarePegAdapter object
+ */
+- (instancetype)initWithPeg:(SquarePeg *)peg;
+
+
+/**
+ Method that returns SquarePeg radius
+
+ @return Radius
+ */
+- (double)getRadius;
+
+
 @end

@@ -8,34 +8,53 @@
 
 #import "Radio.h"
 
+@interface Radio ()
+
+@property (assign, nonatomic) BOOL isEnabled;
+@property (assign, nonatomic) int volume;
+@property (assign, nonatomic) int channel;
+
+@end
+
 @implementation Radio
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _isEnabled = false;
+        _volume = 0;
+        _channel = 0;
+    }
+    
+    return self;
+}
+
 - (void)disable {
-    isEnabled = false;
+    self.isEnabled = false;
 }
 
 - (void)enable {
-    isEnabled = true;
+    self.isEnabled = true;
 }
 
 - (int)getChannel {
-    return channel;
+    return _channel;
 }
 
 - (int)getVolume {
-    return volume;
+    return _volume;
 }
 
-- (bool)isEnabled {
-    return isEnabled;
+- (BOOL)isEnabled {
+    return _isEnabled;
 }
 
 - (void)setChannel:(int)channel {
-    self.channel = channel;
+    _channel = channel;
 }
 
 - (void)setVolume:(int)volume {
-    self.volume = volume;
+    _volume = volume;
 }
 
 @end

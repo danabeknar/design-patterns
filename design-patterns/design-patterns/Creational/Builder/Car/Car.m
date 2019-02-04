@@ -9,5 +9,5 @@
 #import "Car.h"
 
 @implementation Car
-@synthesize seats, gps, tripComputer;
+
 @end

@@ -10,10 +10,8 @@
 #import "Remote.h"
 
 // But each device has its own implementation
-@interface Radio: NSObject<Device> {
-    bool isEnabled;
-    int volume;
-    int channel;
-}
+/// Radio class
+@interface Radio : NSObject<Device>
+
 @end
 

@@ -8,9 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RoundPeg: NSObject {
-    int radius;
-}
-- (id) initWithRadius:(int)radius;
-- (int) getRadius;
+/// RoundPeg class
+@interface RoundPeg : NSObject
+
+/**
+ Initalization with radius
+
+ @param radius Radiurs
+ @return RoundPeg object
+ */
+- (instancetype)initWithRadius:(int)radius;
+
+
+/**
+ Method that returns round peg radius
+
+ @return Radius
+ */
+- (int)getRadius;
+
 @end

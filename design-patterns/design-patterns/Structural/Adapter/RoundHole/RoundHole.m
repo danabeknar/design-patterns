@@ -9,26 +9,28 @@
 #import "RoundHole.h"
 
 @interface RoundHole ()
+
 @property (readwrite) int radius;
+
 @end
 
-
 @implementation RoundHole
-@synthesize radius;
 
--(id)init {
+-(instancetype)init {
     return [self initWithRadius:1];
 }
 
-- (id)initWithRadius:(int)radius {
-    if (self = [super init]) {
-        self.radius = radius;
+- (instancetype)initWithRadius:(int)radius {
+    self = [super init];
+    if (self) {
+        _radius = radius;
     }
+    
     return self;
 }
 
-- (bool)fits:(RoundPeg*)peg {
-    return radius >= [peg getRadius];
+- (bool)fits:(RoundPeg *)peg {
+    return self.radius >= [peg getRadius];
 }
 
 @end

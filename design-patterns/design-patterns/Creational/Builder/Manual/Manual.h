@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Manual: NSObject {
-    NSString *description;
-}
-@property (readwrite) NSString* description;
+/// Manual class
+@interface Manual: NSObject
+
+/// Manual description
+@property (copy, nonatomic, readwrite) NSString* description;
+
 @end

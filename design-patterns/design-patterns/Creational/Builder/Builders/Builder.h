@@ -8,9 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+/// Builder interface declares all available steps of product configuration
 @protocol Builder
-- (void) reset;
-- (void) setSeats:(int)number;
-- (void) setTripComputer:(bool)hasTripComputer;
-- (void) setGPS:(bool)hasGPS;
+
+/// Reset product
+- (void)reset;
+
+/// Set number of seats
+- (void)setSeats:(int)number;
+
+/// Set or remove trip computer
+- (void)setTripComputer:(bool)hasTripComputer;
+
+/// Set or remove GPS
+- (void)setGPS:(bool)hasGPS;
+
 @end

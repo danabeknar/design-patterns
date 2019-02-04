@@ -10,8 +10,14 @@
 #import "Builder.h"
 #import "Manual.h"
 
-@interface CarManualBuilder: NSObject<Builder> {
-    Manual* manual;
-}
-- (Manual *) getResult;
+/// Car manual builder class
+@interface CarManualBuilder : NSObject<Builder>
+
+/**
+ Method that returns final product
+
+ @return Manual object
+ */
+- (Manual *)getResult;
+
 @end

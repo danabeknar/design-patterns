@@ -9,10 +9,27 @@
 #import <Foundation/Foundation.h>
 #import "RoundPeg.h"
 
-@interface RoundHole: NSObject {
-    int radius;
-}
+/// RoundHole class
+@interface RoundHole : NSObject
+
+/// Property that contains hole radius
 @property (readonly) int radius;
-- (id) initWithRadius:(int)radius;
-- (bool) fits:(RoundPeg*)peg;
+
+/**
+ Initialization with radius
+
+ @param radius Radius
+ @return RoundHole object
+ */
+- (instancetype)initWithRadius:(int)radius;
+
+
+/**
+ Method that checks whether peg fits or not
+
+ @param peg RoundPeg object
+ @return Boolean representing fitting
+ */
+- (bool)fits:(RoundPeg *)peg;
+
 @end

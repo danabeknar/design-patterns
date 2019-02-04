@@ -15,10 +15,10 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         TV *tv = [[TV alloc]init];
-        Remote *remote = [[Remote alloc]initWithDevice:tv];
+        Remote *remote = [[Remote alloc] initWithDevice:tv];
         [remote togglePower];
-        Radio *radio = [[Radio alloc]init];
-        remote = [[AdvancedRemote alloc]initWithDevice:radio];
+        Radio *radio = [[Radio alloc] init];
+        remote = [[AdvancedRemote alloc] initWithDevice:radio];
     }
     return 0;
 }

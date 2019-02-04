@@ -13,13 +13,16 @@
 
 @interface AuthenticationDialog ()
 
-@property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) Checkbox *loginOrRegisterCheckbox;
-@property (strong, nonatomic) Textbox *loginUsernameTextField, *loginPasswordTextField;
-@property (strong, nonatomic) Textbox *registrationUsernameTextField, *registrationPasswordTextField;
-@property (strong, nonatomic) Textbox *emailTextField;
-@property (strong, nonatomic) Button *okButton, *cancelButton;
+@property (copy, nonatomic) NSString *title;
 
+@property (strong, nonatomic) Checkbox *loginOrRegisterCheckbox;
+@property (strong, nonatomic) Textbox *loginUsernameTextField;
+@property (strong, nonatomic) Textbox *loginPasswordTextField;
+@property (strong, nonatomic) Textbox *registrationUsernameTextField;
+@property (strong, nonatomic) Textbox *registrationPasswordTextField;
+@property (strong, nonatomic) Textbox *emailTextField;
+@property (strong, nonatomic) Button *okButton;
+@property (strong, nonatomic) Button *cancelButton;
 
 @end
 
@@ -35,6 +38,7 @@
         _okButton = [[Button alloc]init];
         _cancelButton = [[Button alloc]init];
     }
+    
     return self;
 }
 

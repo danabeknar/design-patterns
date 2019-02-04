@@ -11,7 +11,7 @@
 @implementation Checkbox
 
 - (void)check {
-    _isChecked = !_isChecked;
+    self.isChecked = !self.isChecked;
     [dialog notifyWithSender:self event:@"check"];
 }
 

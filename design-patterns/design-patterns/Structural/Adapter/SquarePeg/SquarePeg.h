@@ -8,9 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SquarePeg: NSObject {
-    int width;
-}
-@property (readonly) int width;
-- (id) initWithWidth:(int)width;
+/// Square Peg class
+@interface SquarePeg : NSObject
+
+/// Square Peg width
+@property (assign, nonatomic, readonly) int width;
+
+/**
+ Initalization with width
+
+ @param width Width
+ @return SquarePeg object
+ */
+- (instancetype)initWithWidth:(int)width;
+
 @end

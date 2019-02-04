@@ -10,7 +10,7 @@
 
 @implementation Database
 
-+(Database *) sharedInstance {
++ (Database *)sharedInstance {
     static Database *_sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

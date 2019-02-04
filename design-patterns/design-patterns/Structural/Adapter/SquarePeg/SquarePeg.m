@@ -9,16 +9,19 @@
 #import "SquarePeg.h"
 
 @interface SquarePeg ()
-@property (readwrite) int width;
+
+@property (assign, nonatomic, readwrite) int width;
+
 @end
 
 @implementation SquarePeg
-@synthesize width;
 
 - (id)initWithWidth:(int)width {
-    if (self = [super init]) {
-        self.width = width;
+    self = [super init];
+    if (self) {
+        _width = width;
     }
+    
     return self;
 }
 

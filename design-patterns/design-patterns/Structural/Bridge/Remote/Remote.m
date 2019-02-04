@@ -11,9 +11,11 @@
 @implementation Remote
 
 - (id) initWithDevice:(id<Device>)device {
-    if (self = [super init]) {
+    self = [super init];
+    if (self) {
         self->device = device;
     }
+    
     return self;
 }
 
@@ -27,7 +29,11 @@
 
 
 - (void) togglePower {
-    [device isEnabled] ? [device disable] : [device enable];
+    if (device.isEnabled) {
+        [device disable];
+    } else {
+        [device enable];
+    }
 }
 
 - (void) volumeUp {

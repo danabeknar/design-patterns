@@ -10,7 +10,7 @@
 #import "Mediator.h"
 
 // Concrete mediator. All connections between concrete components have moved to the mediator's code. He receives notifications from his components and knows how to respond to them.
+/// AuthenticationDialog Mediator
 @interface AuthenticationDialog: NSObject<Mediator>
-
 
 @end

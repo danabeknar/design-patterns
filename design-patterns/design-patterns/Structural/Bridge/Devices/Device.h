@@ -9,12 +9,32 @@
 #import <Foundation/Foundation.h>
 
 // All devices have a common interface. Therefore, any remote control can work with them.
+/// Device interface
 @protocol Device
-- (bool) isEnabled;
-- (void) enable;
-- (void) disable;
-- (int) getVolume;
-- (void) setVolume: (int)volume;
-- (int) getChannel;
-- (void) setChannel: (int) channel;
+
+/**
+ Method that checks whether device enabled or disabled
+
+ @return Boolean representing device state
+ */
+- (BOOL)isEnabled;
+
+/// Enable device
+- (void)enable;
+
+/// Disable device
+- (void)disable;
+
+/// Get current volume
+- (int)getVolume;
+
+/// Set volume
+- (void)setVolume:(int)volume;
+
+/// Get current channel
+- (int)getChannel;
+
+/// Set channel
+- (void)setChannel:(int) channel;
+
 @end

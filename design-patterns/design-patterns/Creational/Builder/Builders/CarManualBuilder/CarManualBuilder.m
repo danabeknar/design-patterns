@@ -8,32 +8,38 @@
 
 #import "CarManualBuilder.h"
 
+@interface CarManualBuilder ()
+
+@property (strong, nonatomic) Manual *manual;
+
+@end
+
 @implementation CarManualBuilder
 
 - (void)reset {
-    manual = [[Manual alloc]init];
+    _manual = [[Manual alloc] init];
 }
 
 - (void)setGPS:(bool)hasGPS {
     NSString *carGPSDescription = [NSString stringWithFormat:@"\nCar has GPS: %@", hasGPS ? @"yes" : @"no"];
-    NSString *concatenatedString = [NSString stringWithFormat:@"%@%@", [manual description], carGPSDescription];
-    [manual setDescription: concatenatedString];
+    NSString *concatenatedString = [NSString stringWithFormat:@"%@%@", [self.manual description], carGPSDescription];
+    [self.manual setDescription: concatenatedString];
 }
 
 - (void)setSeats:(int)number {
     NSString *carSeatsDescription = [NSString stringWithFormat:@"\nCar has %d seats", number];
-    NSString *concatenatedString = [NSString stringWithFormat:@"%@%@", [manual description], carSeatsDescription];
-    [manual setDescription: concatenatedString];
+    NSString *concatenatedString = [NSString stringWithFormat:@"%@%@", [self.manual description], carSeatsDescription];
+    [self.manual setDescription: concatenatedString];
 }
 
 - (void)setTripComputer:(bool)hasTripComputer {
     NSString *carTripComputerDescription = [NSString stringWithFormat:@"\nCar has trip computer: %@", hasTripComputer ? @"yes" : @"no"];
-    NSString *concatenatedString = [NSString stringWithFormat:@"%@%@", [manual description], carTripComputerDescription];
-    [manual setDescription: concatenatedString];
+    NSString *concatenatedString = [NSString stringWithFormat:@"%@%@", [self.manual description], carTripComputerDescription];
+    [self.manual setDescription: concatenatedString];
 }
 
 - (Manual *)getResult {
-    return manual;
+    return self.manual;
 }
 
 @end

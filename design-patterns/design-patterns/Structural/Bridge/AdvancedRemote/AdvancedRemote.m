@@ -10,7 +10,7 @@
 
 @implementation AdvancedRemote
 
-- (void) mute {
+- (void)mute {
     [device setVolume: 0];
 }
 

@@ -6,16 +6,18 @@
 //  Copyright © 2018 beknar. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "Manual.h"
 
 @implementation Manual
+
 @synthesize description;
 
--(id)init {
-    if (self = [super init])  {
-        self.description = @"";
+- (instancetype)init {
+    self = [super init];
+    if (self)  {
+        description = @"";
     }
+    
     return self;
 }
 @end

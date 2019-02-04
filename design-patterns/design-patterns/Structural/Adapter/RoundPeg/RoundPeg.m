@@ -8,17 +8,24 @@
 
 #import "RoundPeg.h"
 
+@interface RoundPeg ()
+
+@property (assign, nonatomic, readwrite) int radius;
+
+@end
+
 @implementation RoundPeg
 
-- (id)initWithRadius:(int)radius {
-    if (self = [super init]) {
-        self->radius = radius;
+- (instancetype)initWithRadius:(int)radius {
+    self = [super init];
+    if (self) {
+        _radius = radius;
     }
     return self;
 }
 
 - (int)getRadius {
-    return radius;
+    return self.radius;
 }
 
 @end

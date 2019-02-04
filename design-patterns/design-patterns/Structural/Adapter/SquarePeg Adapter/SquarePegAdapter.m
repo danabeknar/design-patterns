@@ -9,17 +9,25 @@
 #import "SquarePegAdapter.h"
 #include "math.h"
 
+@interface SquarePegAdapter ()
+
+@property (strong, nonatomic) SquarePeg *peg;
+
+@end
+
 @implementation SquarePegAdapter
 
 - (id)initWithPeg:(SquarePeg *)peg {
+    self = [super init];
     if (self = [super init]) {
-        self->peg = peg;
+        _peg = peg;
     }
+    
     return self;
 }
 
 - (double)getRadius {
-    return [peg width] * sqrt(2) / 2;
+    return [self.peg width] * sqrt(2) / 2;
 }
 
 @end

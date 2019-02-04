@@ -10,7 +10,7 @@
 
 // Concrete components are not directly related. They have only one communication channel - through sending notifications to the mediators.
 
+/// Button class
 @interface Button: Module
-
 
 @end
