@@ -21,6 +21,7 @@ Structural:
 
 Behavioral:
 - [Mediator](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Behavioral/Mediator)
+- [Strategy](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Behavioral/Strategy)
 
 To Do:
 -------
