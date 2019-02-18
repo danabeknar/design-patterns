@@ -24,6 +24,11 @@
 		0D843E2921A4861B003B8489 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D843E2821A4861B003B8489 /* Director.m */; };
 		0DA5EF4821A1728D00ED830F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5EF4721A1728D00ED830F /* main.m */; };
 		0DE43F0421A5E015008936E9 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE43F0321A5E015008936E9 /* Database.m */; };
+		0DE8541E221B05F100922B0F /* DPSStrategyAdd.h in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8541D221B05F100922B0F /* DPSStrategyAdd.h */; };
+		0DE85420221B077400922B0F /* DPSStrategyAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8541F221B077400922B0F /* DPSStrategyAdd.m */; };
+		0DE85423221B091900922B0F /* DPSStrategySubstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE85422221B091900922B0F /* DPSStrategySubstract.m */; };
+		0DE85426221B096E00922B0F /* DPSStrategyMultiply.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE85425221B096E00922B0F /* DPSStrategyMultiply.m */; };
+		0DE8542D221B0B3100922B0F /* DPSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8542C221B0B3100922B0F /* DPSContext.m */; };
 		0DF2DB5221A3FD0C00F779AA /* Euro.h in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5121A3FD0C00F779AA /* Euro.h */; };
 		0DF2DB5421A3FEA300F779AA /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5321A3FEA300F779AA /* Euro.m */; };
 		0DF2DB5721A3FF8000F779AA /* USD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2DB5621A3FF8000F779AA /* USD.m */; };
@@ -83,6 +88,15 @@
 		0DA5EF4721A1728D00ED830F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0DE43F0221A5DE30008936E9 /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
 		0DE43F0321A5E015008936E9 /* Database.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		0DE8541C221B048600922B0F /* DPSStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSStrategy.h; sourceTree = "<group>"; };
+		0DE8541D221B05F100922B0F /* DPSStrategyAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSStrategyAdd.h; sourceTree = "<group>"; };
+		0DE8541F221B077400922B0F /* DPSStrategyAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSStrategyAdd.m; sourceTree = "<group>"; };
+		0DE85421221B08F300922B0F /* DPSStrategySubstract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSStrategySubstract.h; sourceTree = "<group>"; };
+		0DE85422221B091900922B0F /* DPSStrategySubstract.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSStrategySubstract.m; sourceTree = "<group>"; };
+		0DE85424221B094E00922B0F /* DPSStrategyMultiply.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSStrategyMultiply.h; sourceTree = "<group>"; };
+		0DE85425221B096E00922B0F /* DPSStrategyMultiply.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSStrategyMultiply.m; sourceTree = "<group>"; };
+		0DE8542B221B0A7C00922B0F /* DPSContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSContext.h; sourceTree = "<group>"; };
+		0DE8542C221B0B3100922B0F /* DPSContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSContext.m; sourceTree = "<group>"; };
 		0DF2DB5021A3FCD400F779AA /* Currency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
 		0DF2DB5121A3FD0C00F779AA /* Euro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Euro.h; sourceTree = "<group>"; };
 		0DF2DB5321A3FEA300F779AA /* Euro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Euro.m; sourceTree = "<group>"; };
@@ -205,6 +219,7 @@
 		0D1ACA6221DF698F00B6019C /* Behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				0DE8541B221B045E00922B0F /* Strategy */,
 				0D1ACA6321DF69C000B6019C /* Mediator */,
 			);
 			path = Behavioral;
@@ -405,6 +420,62 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		0DE8541B221B045E00922B0F /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8542E221B103300922B0F /* Context */,
+				0DE85427221B099200922B0F /* Strategies */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		0DE85427221B099200922B0F /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8541C221B048600922B0F /* DPSStrategy.h */,
+				0DE85428221B099D00922B0F /* Add */,
+				0DE85429221B09A500922B0F /* Substract */,
+				0DE8542A221B09B200922B0F /* Multiply */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		0DE85428221B099D00922B0F /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8541D221B05F100922B0F /* DPSStrategyAdd.h */,
+				0DE8541F221B077400922B0F /* DPSStrategyAdd.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		0DE85429221B09A500922B0F /* Substract */ = {
+			isa = PBXGroup;
+			children = (
+				0DE85421221B08F300922B0F /* DPSStrategySubstract.h */,
+				0DE85422221B091900922B0F /* DPSStrategySubstract.m */,
+			);
+			path = Substract;
+			sourceTree = "<group>";
+		};
+		0DE8542A221B09B200922B0F /* Multiply */ = {
+			isa = PBXGroup;
+			children = (
+				0DE85424221B094E00922B0F /* DPSStrategyMultiply.h */,
+				0DE85425221B096E00922B0F /* DPSStrategyMultiply.m */,
+			);
+			path = Multiply;
+			sourceTree = "<group>";
+		};
+		0DE8542E221B103300922B0F /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8542B221B0A7C00922B0F /* DPSContext.h */,
+				0DE8542C221B0B3100922B0F /* DPSContext.m */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
 		0DF2DB4F21A3F30700F779AA /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +591,7 @@
 			files = (
 				0DF2DB5421A3FEA300F779AA /* Euro.m in Sources */,
 				0D0EF5DA21B0632300EEAC41 /* AdvancedRemote.m in Sources */,
+				0DE8541E221B05F100922B0F /* DPSStrategyAdd.h in Sources */,
 				0D75735821B005F1006C002F /* RoundHole.m in Sources */,
 				0DF2DB6321A4195F00F779AA /* CarBuilder.m in Sources */,
 				0D75735B21B008E9006C002F /* RoundPeg.m in Sources */,
@@ -530,11 +602,15 @@
 				0DA5EF4821A1728D00ED830F /* main.m in Sources */,
 				0DF2DB5C21A409DB00F779AA /* CurrencyFactory.m in Sources */,
 				0DF2DB5221A3FD0C00F779AA /* Euro.h in Sources */,
+				0DE85420221B077400922B0F /* DPSStrategyAdd.m in Sources */,
 				0D1ACA6F21DF77A100B6019C /* AuthenticationDialog.m in Sources */,
+				0DE8542D221B0B3100922B0F /* DPSContext.m in Sources */,
 				0DF2DB6B21A42EDD00F779AA /* Manual.m in Sources */,
 				0D1ACA7221DF780800B6019C /* Checkbox.m in Sources */,
 				0DF2DB6721A41B7A00F779AA /* Car.m in Sources */,
+				0DE85423221B091900922B0F /* DPSStrategySubstract.m in Sources */,
 				0D0EF5D721B061F900EEAC41 /* Radio.m in Sources */,
+				0DE85426221B096E00922B0F /* DPSStrategyMultiply.m in Sources */,
 				0D0EF5C721B043FE00EEAC41 /* SquarePegAdapter.m in Sources */,
 				0D843E2921A4861B003B8489 /* Director.m in Sources */,
 				0D1ACA7521DF7AAC00B6019C /* Textbox.m in Sources */,
