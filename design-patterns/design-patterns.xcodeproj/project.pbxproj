@@ -12,6 +12,9 @@
 		0D0EF5D421B05DC700EEAC41 /* Remote.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D321B05DC700EEAC41 /* Remote.m */; };
 		0D0EF5D721B061F900EEAC41 /* Radio.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D621B061F900EEAC41 /* Radio.m */; };
 		0D0EF5DA21B0632300EEAC41 /* AdvancedRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EF5D921B0632300EEAC41 /* AdvancedRemote.m */; };
+		0D10BA3E22395447006DDD3B /* DPSThirdPatyYoutubeLibImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10BA3D22395447006DDD3B /* DPSThirdPatyYoutubeLibImpl.m */; };
+		0D10BA43223955CF006DDD3B /* DPSCachedThirdPartyYoutubeLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10BA42223955CF006DDD3B /* DPSCachedThirdPartyYoutubeLib.m */; };
+		0D10BA47223960FA006DDD3B /* DPSYoutubeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10BA46223960FA006DDD3B /* DPSYoutubeManager.m */; };
 		0D1ACA6821DF70F600B6019C /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA6721DF70F600B6019C /* Module.m */; };
 		0D1ACA6F21DF77A100B6019C /* AuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA6E21DF77A100B6019C /* AuthenticationDialog.m */; };
 		0D1ACA7221DF780800B6019C /* Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA7121DF780800B6019C /* Checkbox.m */; };
@@ -63,6 +66,13 @@
 		0D0EF5D621B061F900EEAC41 /* Radio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Radio.m; sourceTree = "<group>"; };
 		0D0EF5D821B062E200EEAC41 /* AdvancedRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedRemote.h; sourceTree = "<group>"; };
 		0D0EF5D921B0632300EEAC41 /* AdvancedRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvancedRemote.m; sourceTree = "<group>"; };
+		0D10BA3B2239513D006DDD3B /* DPSThirdPartyYoutubeLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSThirdPartyYoutubeLib.h; sourceTree = "<group>"; };
+		0D10BA3C223953E1006DDD3B /* DPSThirdPartyYoutubeLibImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSThirdPartyYoutubeLibImpl.h; sourceTree = "<group>"; };
+		0D10BA3D22395447006DDD3B /* DPSThirdPatyYoutubeLibImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSThirdPatyYoutubeLibImpl.m; sourceTree = "<group>"; };
+		0D10BA412239559E006DDD3B /* DPSCachedThirdPartyYoutubeLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSCachedThirdPartyYoutubeLib.h; sourceTree = "<group>"; };
+		0D10BA42223955CF006DDD3B /* DPSCachedThirdPartyYoutubeLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSCachedThirdPartyYoutubeLib.m; sourceTree = "<group>"; };
+		0D10BA4522395FEC006DDD3B /* DPSYoutubeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSYoutubeManager.h; sourceTree = "<group>"; };
+		0D10BA46223960FA006DDD3B /* DPSYoutubeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSYoutubeManager.m; sourceTree = "<group>"; };
 		0D1ACA6421DF6D6A00B6019C /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
 		0D1ACA6521DF6E2600B6019C /* AuthenticationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationDialog.h; sourceTree = "<group>"; };
 		0D1ACA6721DF70F600B6019C /* Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
@@ -216,6 +226,52 @@
 			path = AdvancedRemote;
 			sourceTree = "<group>";
 		};
+		0D10BA392239504F006DDD3B /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				0D10BA4422395FDD006DDD3B /* YoutubeManager */,
+				0D10BA3A22395062006DDD3B /* ThirdPartyYoutubeLib */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		0D10BA3A22395062006DDD3B /* ThirdPartyYoutubeLib */ = {
+			isa = PBXGroup;
+			children = (
+				0D10BA3B2239513D006DDD3B /* DPSThirdPartyYoutubeLib.h */,
+				0D10BA3F223954AF006DDD3B /* ThirdPartyYoutubeLibImpl */,
+				0D10BA4022395573006DDD3B /* CachedThirdPartyYoutubeLib */,
+			);
+			path = ThirdPartyYoutubeLib;
+			sourceTree = "<group>";
+		};
+		0D10BA3F223954AF006DDD3B /* ThirdPartyYoutubeLibImpl */ = {
+			isa = PBXGroup;
+			children = (
+				0D10BA3C223953E1006DDD3B /* DPSThirdPartyYoutubeLibImpl.h */,
+				0D10BA3D22395447006DDD3B /* DPSThirdPatyYoutubeLibImpl.m */,
+			);
+			path = ThirdPartyYoutubeLibImpl;
+			sourceTree = "<group>";
+		};
+		0D10BA4022395573006DDD3B /* CachedThirdPartyYoutubeLib */ = {
+			isa = PBXGroup;
+			children = (
+				0D10BA412239559E006DDD3B /* DPSCachedThirdPartyYoutubeLib.h */,
+				0D10BA42223955CF006DDD3B /* DPSCachedThirdPartyYoutubeLib.m */,
+			);
+			path = CachedThirdPartyYoutubeLib;
+			sourceTree = "<group>";
+		};
+		0D10BA4422395FDD006DDD3B /* YoutubeManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D10BA4522395FEC006DDD3B /* DPSYoutubeManager.h */,
+				0D10BA46223960FA006DDD3B /* DPSYoutubeManager.m */,
+			);
+			path = YoutubeManager;
+			sourceTree = "<group>";
+		};
 		0D1ACA6221DF698F00B6019C /* Behavioral */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +370,7 @@
 			children = (
 				0D75735521B004D1006C002F /* Adapter */,
 				0D0EF5CC21B0512B00EEAC41 /* Bridge */,
+				0D10BA392239504F006DDD3B /* Proxy */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -590,12 +647,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DF2DB5421A3FEA300F779AA /* Euro.m in Sources */,
+				0D10BA3E22395447006DDD3B /* DPSThirdPatyYoutubeLibImpl.m in Sources */,
 				0D0EF5DA21B0632300EEAC41 /* AdvancedRemote.m in Sources */,
 				0DE8541E221B05F100922B0F /* DPSStrategyAdd.h in Sources */,
 				0D75735821B005F1006C002F /* RoundHole.m in Sources */,
 				0DF2DB6321A4195F00F779AA /* CarBuilder.m in Sources */,
 				0D75735B21B008E9006C002F /* RoundPeg.m in Sources */,
 				0D0EF5D021B0543B00EEAC41 /* TV.m in Sources */,
+				0D10BA43223955CF006DDD3B /* DPSCachedThirdPartyYoutubeLib.m in Sources */,
 				0D843E2621A43F18003B8489 /* CarManualBuilder.m in Sources */,
 				0D1ACA7721DF7C8500B6019C /* Button.m in Sources */,
 				0DF2DB5721A3FF8000F779AA /* USD.m in Sources */,
@@ -605,6 +664,7 @@
 				0DE85420221B077400922B0F /* DPSStrategyAdd.m in Sources */,
 				0D1ACA6F21DF77A100B6019C /* AuthenticationDialog.m in Sources */,
 				0DE8542D221B0B3100922B0F /* DPSContext.m in Sources */,
+				0D10BA47223960FA006DDD3B /* DPSYoutubeManager.m in Sources */,
 				0DF2DB6B21A42EDD00F779AA /* Manual.m in Sources */,
 				0D1ACA7221DF780800B6019C /* Checkbox.m in Sources */,
 				0DF2DB6721A41B7A00F779AA /* Car.m in Sources */,

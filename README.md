@@ -18,6 +18,7 @@ Creational:
 Structural:
 - [Adapter](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Structural/Adapter)
 - [Bridge](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Structural/Bridge)
+- [Proxy](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Structural/Proxy)
 
 Behavioral:
 - [Mediator](https://github.com/danabeknar/design-patterns/tree/master/design-patterns/design-patterns/Behavioral/Mediator)
