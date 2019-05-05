@@ -7,19 +7,34 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPSYoutubeManager.h"
-#import "DPSThirdPartyYoutubeLib.h"
-#import "DPSThirdPartyYoutubeLibImpl.h"
-#import "DPSCachedThirdPartyYoutubeLib.h"
+#import "DPSTextEditor.h"
+#import "DPSWritingState.h"
+#import "DPSDefaultTextState.h"
+#import "DPSUpperCaseState.h"
+#import "DPSLowerCaseState.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        id<DPSThirdPartyYoutubeLib> youtubeService = [DPSThirdPartyYoutubeLibImpl new];
-        id<DPSThirdPartyYoutubeLib> youtubeProxy = [DPSCachedThirdPartyYoutubeLib initWithService:youtubeService];
-        DPSYoutubeManager *manager = [[DPSYoutubeManager alloc] initWithService:youtubeProxy];
+        // Initalize default text state.
+        id<DPSWritingState> state = [[DPSDefaultTextState alloc] init];
         
-        [manager handleUserInput];
+        // Initalize text editor.
+        DPSTextEditor *editor = [[DPSTextEditor alloc] initWithWritingState:state];
         
+        // Type text in default state.
+        [editor typeText:@"First"];
+        
+        // Change state to uppercase and type another text.
+        state = [[DPSUpperCaseState alloc] init];
+        [editor setState:state];
+        [editor typeText:@"second"];
+        [editor typeText:@"third"];
+        
+        // Change state to lowercase and type another text.
+        state = [[DPSLowerCaseState alloc] init];
+        [editor setState:state];
+        [editor typeText:@"FOURTH"];
+        [editor typeText:@"FIFTH"];
     }
     
     return 0;

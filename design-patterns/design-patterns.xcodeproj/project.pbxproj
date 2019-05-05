@@ -20,6 +20,10 @@
 		0D1ACA7221DF780800B6019C /* Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA7121DF780800B6019C /* Checkbox.m */; };
 		0D1ACA7521DF7AAC00B6019C /* Textbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA7421DF7AAC00B6019C /* Textbox.m */; };
 		0D1ACA7721DF7C8500B6019C /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1ACA7621DF7C8500B6019C /* Button.m */; };
+		0D2E679E227F1353003F69EF /* DPSUpperCaseState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E679D227F1353003F69EF /* DPSUpperCaseState.m */; };
+		0D2E67A2227F13F4003F69EF /* DPSLowerCaseState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E67A1227F13F4003F69EF /* DPSLowerCaseState.m */; };
+		0D2E67A6227F144D003F69EF /* DPSDefaultTextState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E67A5227F144D003F69EF /* DPSDefaultTextState.m */; };
+		0D2E67AA227F157B003F69EF /* DPSTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E67A9227F157B003F69EF /* DPSTextEditor.m */; };
 		0D75735821B005F1006C002F /* RoundHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735721B005F1006C002F /* RoundHole.m */; };
 		0D75735B21B008E9006C002F /* RoundPeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735A21B008E9006C002F /* RoundPeg.m */; };
 		0D75735E21B00A87006C002F /* SquarePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735D21B00A87006C002F /* SquarePeg.m */; };
@@ -84,6 +88,15 @@
 		0D1ACA7321DF7A8300B6019C /* Textbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Textbox.h; sourceTree = "<group>"; };
 		0D1ACA7421DF7AAC00B6019C /* Textbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Textbox.m; sourceTree = "<group>"; };
 		0D1ACA7621DF7C8500B6019C /* Button.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		0D2E679A227F121A003F69EF /* DPSWritingState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSWritingState.h; sourceTree = "<group>"; };
+		0D2E679C227F12EB003F69EF /* DPSUpperCaseState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSUpperCaseState.h; sourceTree = "<group>"; };
+		0D2E679D227F1353003F69EF /* DPSUpperCaseState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSUpperCaseState.m; sourceTree = "<group>"; };
+		0D2E67A0227F13DE003F69EF /* DPSLowerCaseState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSLowerCaseState.h; sourceTree = "<group>"; };
+		0D2E67A1227F13F4003F69EF /* DPSLowerCaseState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSLowerCaseState.m; sourceTree = "<group>"; };
+		0D2E67A4227F142C003F69EF /* DPSDefaultTextState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSDefaultTextState.h; sourceTree = "<group>"; };
+		0D2E67A5227F144D003F69EF /* DPSDefaultTextState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSDefaultTextState.m; sourceTree = "<group>"; };
+		0D2E67A8227F14B3003F69EF /* DPSTextEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSTextEditor.h; sourceTree = "<group>"; };
+		0D2E67A9227F157B003F69EF /* DPSTextEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSTextEditor.m; sourceTree = "<group>"; };
 		0D75735621B004DB006C002F /* RoundHole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundHole.h; sourceTree = "<group>"; };
 		0D75735721B005F1006C002F /* RoundHole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundHole.m; sourceTree = "<group>"; };
 		0D75735921B0069B006C002F /* RoundPeg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundPeg.h; sourceTree = "<group>"; };
@@ -277,6 +290,7 @@
 			children = (
 				0DE8541B221B045E00922B0F /* Strategy */,
 				0D1ACA6321DF69C000B6019C /* Mediator */,
+				0D2E6794227F0FF9003F69EF /* State */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -353,6 +367,62 @@
 				0D1ACA7421DF7AAC00B6019C /* Textbox.m */,
 			);
 			path = Textbox;
+			sourceTree = "<group>";
+		};
+		0D2E6794227F0FF9003F69EF /* State */ = {
+			isa = PBXGroup;
+			children = (
+				0D2E67A7227F14A6003F69EF /* Context */,
+				0D2E6799227F1208003F69EF /* States */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		0D2E6799227F1208003F69EF /* States */ = {
+			isa = PBXGroup;
+			children = (
+				0D2E679A227F121A003F69EF /* DPSWritingState.h */,
+				0D2E67A3227F1414003F69EF /* DefaultTextState */,
+				0D2E679F227F13C9003F69EF /* LowerCaseState */,
+				0D2E679B227F12D1003F69EF /* UpperCaseState */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		0D2E679B227F12D1003F69EF /* UpperCaseState */ = {
+			isa = PBXGroup;
+			children = (
+				0D2E679C227F12EB003F69EF /* DPSUpperCaseState.h */,
+				0D2E679D227F1353003F69EF /* DPSUpperCaseState.m */,
+			);
+			path = UpperCaseState;
+			sourceTree = "<group>";
+		};
+		0D2E679F227F13C9003F69EF /* LowerCaseState */ = {
+			isa = PBXGroup;
+			children = (
+				0D2E67A0227F13DE003F69EF /* DPSLowerCaseState.h */,
+				0D2E67A1227F13F4003F69EF /* DPSLowerCaseState.m */,
+			);
+			path = LowerCaseState;
+			sourceTree = "<group>";
+		};
+		0D2E67A3227F1414003F69EF /* DefaultTextState */ = {
+			isa = PBXGroup;
+			children = (
+				0D2E67A4227F142C003F69EF /* DPSDefaultTextState.h */,
+				0D2E67A5227F144D003F69EF /* DPSDefaultTextState.m */,
+			);
+			path = DefaultTextState;
+			sourceTree = "<group>";
+		};
+		0D2E67A7227F14A6003F69EF /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				0D2E67A8227F14B3003F69EF /* DPSTextEditor.h */,
+				0D2E67A9227F157B003F69EF /* DPSTextEditor.m */,
+			);
+			path = Context;
 			sourceTree = "<group>";
 		};
 		0D75735321B00499006C002F /* Creational */ = {
@@ -652,6 +722,7 @@
 				0DE8541E221B05F100922B0F /* DPSStrategyAdd.h in Sources */,
 				0D75735821B005F1006C002F /* RoundHole.m in Sources */,
 				0DF2DB6321A4195F00F779AA /* CarBuilder.m in Sources */,
+				0D2E679E227F1353003F69EF /* DPSUpperCaseState.m in Sources */,
 				0D75735B21B008E9006C002F /* RoundPeg.m in Sources */,
 				0D0EF5D021B0543B00EEAC41 /* TV.m in Sources */,
 				0D10BA43223955CF006DDD3B /* DPSCachedThirdPartyYoutubeLib.m in Sources */,
@@ -677,7 +748,10 @@
 				0DE43F0421A5E015008936E9 /* Database.m in Sources */,
 				0DF2DB6121A418A900F779AA /* Builder.h in Sources */,
 				0D1ACA6821DF70F600B6019C /* Module.m in Sources */,
+				0D2E67AA227F157B003F69EF /* DPSTextEditor.m in Sources */,
+				0D2E67A2227F13F4003F69EF /* DPSLowerCaseState.m in Sources */,
 				0D75735E21B00A87006C002F /* SquarePeg.m in Sources */,
+				0D2E67A6227F144D003F69EF /* DPSDefaultTextState.m in Sources */,
 				0D0EF5D421B05DC700EEAC41 /* Remote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
