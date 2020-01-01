@@ -7,34 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DPSTextEditor.h"
-#import "DPSWritingState.h"
-#import "DPSDefaultTextState.h"
-#import "DPSUpperCaseState.h"
-#import "DPSLowerCaseState.h"
+#import "DPSShape.h"
+#import "DPSVisitor.h"
+#import "DPSDot.h"
+#import "DPSCircle.h"
+#import "DPSRectangle.h"
+#import "DPSXMLExportVisitor.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // Initalize default text state.
-        id<DPSWritingState> state = [[DPSDefaultTextState alloc] init];
+        NSArray<id<DPSShape>> *allShapes = @[[DPSDot new],
+                                             [DPSCircle new],
+                                             [DPSRectangle new]];
         
-        // Initalize text editor.
-        DPSTextEditor *editor = [[DPSTextEditor alloc] initWithWritingState:state];
+        id<DPSVisitor> xmlExportVisitor = [DPSXMLExportVisitor new];
         
-        // Type text in default state.
-        [editor typeText:@"First"];
-        
-        // Change state to uppercase and type another text.
-        state = [[DPSUpperCaseState alloc] init];
-        [editor setState:state];
-        [editor typeText:@"second"];
-        [editor typeText:@"third"];
-        
-        // Change state to lowercase and type another text.
-        state = [[DPSLowerCaseState alloc] init];
-        [editor setState:state];
-        [editor typeText:@"FOURTH"];
-        [editor typeText:@"FIFTH"];
+        for (id<DPSShape> shape in allShapes) {
+            [shape acceptVisitor:xmlExportVisitor];
+        }
     }
     
     return 0;

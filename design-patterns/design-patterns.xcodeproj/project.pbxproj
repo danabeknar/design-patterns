@@ -24,6 +24,11 @@
 		0D2E67A2227F13F4003F69EF /* DPSLowerCaseState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E67A1227F13F4003F69EF /* DPSLowerCaseState.m */; };
 		0D2E67A6227F144D003F69EF /* DPSDefaultTextState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E67A5227F144D003F69EF /* DPSDefaultTextState.m */; };
 		0D2E67AA227F157B003F69EF /* DPSTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E67A9227F157B003F69EF /* DPSTextEditor.m */; };
+		0D30FBFE23BCA23600CC5352 /* DPSVisitor.h in Sources */ = {isa = PBXBuildFile; fileRef = 0D30FBFD23BCA23600CC5352 /* DPSVisitor.h */; };
+		0D30FC0223BCA38C00CC5352 /* DPSDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D30FC0123BCA38C00CC5352 /* DPSDot.m */; };
+		0D30FC0523BCA48700CC5352 /* DPSCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D30FC0423BCA48700CC5352 /* DPSCircle.m */; };
+		0D30FC0823BCA53E00CC5352 /* DPSRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D30FC0723BCA53E00CC5352 /* DPSRectangle.m */; };
+		0D30FC0F23BCA6A400CC5352 /* DPSXMLExportVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D30FC0E23BCA6A400CC5352 /* DPSXMLExportVisitor.m */; };
 		0D75735821B005F1006C002F /* RoundHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735721B005F1006C002F /* RoundHole.m */; };
 		0D75735B21B008E9006C002F /* RoundPeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735A21B008E9006C002F /* RoundPeg.m */; };
 		0D75735E21B00A87006C002F /* SquarePeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75735D21B00A87006C002F /* SquarePeg.m */; };
@@ -97,6 +102,16 @@
 		0D2E67A5227F144D003F69EF /* DPSDefaultTextState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSDefaultTextState.m; sourceTree = "<group>"; };
 		0D2E67A8227F14B3003F69EF /* DPSTextEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSTextEditor.h; sourceTree = "<group>"; };
 		0D2E67A9227F157B003F69EF /* DPSTextEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSTextEditor.m; sourceTree = "<group>"; };
+		0D30FBFD23BCA23600CC5352 /* DPSVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSVisitor.h; sourceTree = "<group>"; };
+		0D30FBFF23BCA2BB00CC5352 /* DPSShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSShape.h; sourceTree = "<group>"; };
+		0D30FC0023BCA35F00CC5352 /* DPSDot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSDot.h; sourceTree = "<group>"; };
+		0D30FC0123BCA38C00CC5352 /* DPSDot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSDot.m; sourceTree = "<group>"; };
+		0D30FC0323BCA46B00CC5352 /* DPSCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSCircle.h; sourceTree = "<group>"; };
+		0D30FC0423BCA48700CC5352 /* DPSCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSCircle.m; sourceTree = "<group>"; };
+		0D30FC0623BCA52A00CC5352 /* DPSRectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSRectangle.h; sourceTree = "<group>"; };
+		0D30FC0723BCA53E00CC5352 /* DPSRectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSRectangle.m; sourceTree = "<group>"; };
+		0D30FC0D23BCA67500CC5352 /* DPSXMLExportVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSXMLExportVisitor.h; sourceTree = "<group>"; };
+		0D30FC0E23BCA6A400CC5352 /* DPSXMLExportVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSXMLExportVisitor.m; sourceTree = "<group>"; };
 		0D75735621B004DB006C002F /* RoundHole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundHole.h; sourceTree = "<group>"; };
 		0D75735721B005F1006C002F /* RoundHole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundHole.m; sourceTree = "<group>"; };
 		0D75735921B0069B006C002F /* RoundPeg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundPeg.h; sourceTree = "<group>"; };
@@ -291,6 +306,7 @@
 				0DE8541B221B045E00922B0F /* Strategy */,
 				0D1ACA6321DF69C000B6019C /* Mediator */,
 				0D2E6794227F0FF9003F69EF /* State */,
+				0D30FBFC23BCA21300CC5352 /* Visitor */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -423,6 +439,71 @@
 				0D2E67A9227F157B003F69EF /* DPSTextEditor.m */,
 			);
 			path = Context;
+			sourceTree = "<group>";
+		};
+		0D30FBFC23BCA21300CC5352 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				0D30FBFF23BCA2BB00CC5352 /* DPSShape.h */,
+				0D30FBFD23BCA23600CC5352 /* DPSVisitor.h */,
+				0D30FC1023BCA6FB00CC5352 /* Visitors */,
+				0D30FC0923BCA56900CC5352 /* Shapes */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
+		0D30FC0923BCA56900CC5352 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				0D30FC0A23BCA57400CC5352 /* Dot */,
+				0D30FC0B23BCA57A00CC5352 /* Circle */,
+				0D30FC0C23BCA58900CC5352 /* Rectangle */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		0D30FC0A23BCA57400CC5352 /* Dot */ = {
+			isa = PBXGroup;
+			children = (
+				0D30FC0023BCA35F00CC5352 /* DPSDot.h */,
+				0D30FC0123BCA38C00CC5352 /* DPSDot.m */,
+			);
+			path = Dot;
+			sourceTree = "<group>";
+		};
+		0D30FC0B23BCA57A00CC5352 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				0D30FC0323BCA46B00CC5352 /* DPSCircle.h */,
+				0D30FC0423BCA48700CC5352 /* DPSCircle.m */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		0D30FC0C23BCA58900CC5352 /* Rectangle */ = {
+			isa = PBXGroup;
+			children = (
+				0D30FC0623BCA52A00CC5352 /* DPSRectangle.h */,
+				0D30FC0723BCA53E00CC5352 /* DPSRectangle.m */,
+			);
+			path = Rectangle;
+			sourceTree = "<group>";
+		};
+		0D30FC1023BCA6FB00CC5352 /* Visitors */ = {
+			isa = PBXGroup;
+			children = (
+				0D30FC1123BCA70500CC5352 /* XMLExport */,
+			);
+			path = Visitors;
+			sourceTree = "<group>";
+		};
+		0D30FC1123BCA70500CC5352 /* XMLExport */ = {
+			isa = PBXGroup;
+			children = (
+				0D30FC0D23BCA67500CC5352 /* DPSXMLExportVisitor.h */,
+				0D30FC0E23BCA6A400CC5352 /* DPSXMLExportVisitor.m */,
+			);
+			path = XMLExport;
 			sourceTree = "<group>";
 		};
 		0D75735321B00499006C002F /* Creational */ = {
@@ -738,9 +819,13 @@
 				0D10BA47223960FA006DDD3B /* DPSYoutubeManager.m in Sources */,
 				0DF2DB6B21A42EDD00F779AA /* Manual.m in Sources */,
 				0D1ACA7221DF780800B6019C /* Checkbox.m in Sources */,
+				0D30FC0F23BCA6A400CC5352 /* DPSXMLExportVisitor.m in Sources */,
 				0DF2DB6721A41B7A00F779AA /* Car.m in Sources */,
+				0D30FC0523BCA48700CC5352 /* DPSCircle.m in Sources */,
 				0DE85423221B091900922B0F /* DPSStrategySubstract.m in Sources */,
+				0D30FC0223BCA38C00CC5352 /* DPSDot.m in Sources */,
 				0D0EF5D721B061F900EEAC41 /* Radio.m in Sources */,
+				0D30FC0823BCA53E00CC5352 /* DPSRectangle.m in Sources */,
 				0DE85426221B096E00922B0F /* DPSStrategyMultiply.m in Sources */,
 				0D0EF5C721B043FE00EEAC41 /* SquarePegAdapter.m in Sources */,
 				0D843E2921A4861B003B8489 /* Director.m in Sources */,
@@ -748,6 +833,7 @@
 				0DE43F0421A5E015008936E9 /* Database.m in Sources */,
 				0DF2DB6121A418A900F779AA /* Builder.h in Sources */,
 				0D1ACA6821DF70F600B6019C /* Module.m in Sources */,
+				0D30FBFE23BCA23600CC5352 /* DPSVisitor.h in Sources */,
 				0D2E67AA227F157B003F69EF /* DPSTextEditor.m in Sources */,
 				0D2E67A2227F13F4003F69EF /* DPSLowerCaseState.m in Sources */,
 				0D75735E21B00A87006C002F /* SquarePeg.m in Sources */,
